@@ -1,0 +1,2 @@
+/Users/abhijiths/Flutter/wordwisefinal/android/app/.cxx/Debug/1j2n2d3i/x86_64/CMakeFiles/edit_cache.dir
+/Users/abhijiths/Flutter/wordwisefinal/android/app/.cxx/Debug/1j2n2d3i/x86_64/CMakeFiles/rebuild_cache.dir

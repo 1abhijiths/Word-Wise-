@@ -1,0 +1,10 @@
+    const Color(0xFF8AB4F8), // Card color 1
+          const Color(0xFF90CAF9), // Card color 2
+          const Color(0xC2E8FF), // Card color 3
+          const Color(0xA9785DFFF), // Card color 4
+          const Color.fromARGB(149, 5, 110, 175),
+          Color(0xFFF5D090), // Card color 5
+          const Color(0x0C2E4C), // Card color 6
+          // Card color 7
+          Color(0xFF444444), // Card color 8
+          const Color(0xA3C6FFFF),
