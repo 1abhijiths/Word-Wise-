@@ -84,7 +84,7 @@ class _BadgesPageState extends State<BadgesPage> {
           
          
             //const SizedBox(height: 30.0),
-            Expanded( // Added Expanded here
+            Expanded(  
               child: ListView.builder(
                 itemCount: badges.length,
                 itemBuilder: (context, index) {
