@@ -22,9 +22,9 @@ class _SummaryPageState extends State<SummaryPage> {
     fetchSummaryData();
   }
 
-  /// Fetches summary data using Gemini API
+ 
   Future<void> fetchSummaryData() async {
-    const String apiKey = 'AIzaSyBjq6XvW_BSe70pA6pqOKwKrbuP8H--6YY'; // Replace with your actual Gemini API key
+    const String apiKey = 'APIKEY';  
     const String apiUrl =
         'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=$apiKey';
     final Map<String, dynamic> requestBody = {
