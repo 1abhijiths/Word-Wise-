@@ -27,7 +27,7 @@ class _KeywordStoryPageState extends State<KeywordStoryPage> {
 
   Future<String> _getKeywordDefinition(String keyword) async {
     try {
-      final apiKey = 'AIzaSyBjq6XvW_BSe70pA6pqOKwKrbuP8H--6YY';
+      final apiKey = 'API KEY';
       final apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=$apiKey';
       
       final requestBody = {
