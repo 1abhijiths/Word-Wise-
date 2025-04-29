@@ -18,10 +18,10 @@ class WordOfDayApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xFFF5EEBF),
-          primary: const Color.fromARGB(255, 222, 227, 121), // Complementary darker shade
-          secondary: const Color(0xFFD1C98E), // Medium shade
-          surface: const Color(0xFFF5EEBF), // Your specified beige color
-          background: const Color(0xFFFDF9E2), // Lighter version for background
+          primary: const Color.fromARGB(255, 222, 227, 121), 
+          secondary: const Color(0xFFD1C98E), 
+          surface: const Color(0xFFF5EEBF), 
+          background: const Color(0xFFFDF9E2),  
         ),
         useMaterial3: true,
         fontFamily: 'Roboto',
@@ -70,7 +70,7 @@ class _WordOfDayPageState extends State<WordOfDayPage> with SingleTickerProvider
   late Animation<double> _animation;
   
   // Replace with your actual API Key if needed
-  final String _apiKey = "AIzaSyBjq6XvW_BSe70pA6pqOKwKrbuP8H--6YY"; 
+  final String _apiKey = "API KEY"; 
   final String _apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent";
 
   // List of interesting words to use as fallbacks
@@ -218,7 +218,7 @@ class _WordOfDayPageState extends State<WordOfDayPage> with SingleTickerProvider
         }
       ],
       "generationConfig": {
-        "temperature": 0.7, // Increased from 0.3 to add more variety
+        "temperature": 0.7, 
         "topK": 40,
         "topP": 0.95,
         "maxOutputTokens": 1024,
@@ -275,9 +275,9 @@ class _WordOfDayPageState extends State<WordOfDayPage> with SingleTickerProvider
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFDF9E2), // Lighter beige background
+      backgroundColor: const Color(0xFFFDF9E2),  
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 254, 238, 153), // Darker complementary color
+        backgroundColor: Color.fromARGB(255, 254, 238, 153),
         foregroundColor: const Color.fromARGB(255, 0, 0, 0),
         elevation: 0,
         title: const Text('Word of the Day', 
@@ -288,7 +288,7 @@ class _WordOfDayPageState extends State<WordOfDayPage> with SingleTickerProvider
           IconButton(
             icon: const Icon(Icons.refresh),
             onPressed: () {
-              _lastFetchDate = ""; // Clear the date to force refresh
+              _lastFetchDate = "";  
               _loadWordOfDay();
             },
             tooltip: 'Get New Word',
