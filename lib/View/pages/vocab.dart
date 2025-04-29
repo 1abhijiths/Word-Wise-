@@ -24,9 +24,9 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
     fetchGeminiData();
   }
 
-  /// Fetches vocabulary-related data using Gemini API
+ 
   Future<void> fetchGeminiData() async {
-    const String apiKey = 'AIzaSyBjq6XvW_BSe70pA6pqOKwKrbuP8H--6YY'; // Replace with your actual Gemini API key
+    const String apiKey = 'APIKEY';  
     const String apiUrl =
         'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=$apiKey';
     final Map<String, dynamic> requestBody = {
@@ -88,20 +88,20 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
           'word': wordData['word'],
           'meaning': wordData['meaning'],
           'example': wordData['example'],
-          'timestamp': FieldValue.serverTimestamp(), // To order words by time
+          'timestamp': FieldValue.serverTimestamp(), 
         });
       } else {
-        print('Duplicate word "${wordData['word']}" not added.'); //optional
+        print('Duplicate word "${wordData['word']}" not added.');  
       }
     }
   }
 
 
 
-  /// Improved parsing function to handle various formats including asterisks
+ 
   List<Map<String, String>> parseVocabulary(String responseText) {
     List<Map<String, String>> vocabList = [];
-    // Replace all markdown formatting with plain text
+   
     String cleanedText = responseText.replaceAll('**', '').replaceAll('*', '');
     List<String> lines = cleanedText.split("\n");
     
