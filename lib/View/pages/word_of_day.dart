@@ -68,8 +68,7 @@ class _WordOfDayPageState extends State<WordOfDayPage> with SingleTickerProvider
   String _lastFetchDate = "";
   late AnimationController _controller;
   late Animation<double> _animation;
-  
-  // Replace with your actual API Key if needed
+   
   final String _apiKey = "API KEY"; 
   final String _apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent";
 
